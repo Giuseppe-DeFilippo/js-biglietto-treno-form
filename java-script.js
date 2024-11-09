@@ -21,16 +21,22 @@ if(age <=17 ){
     let prezzoFinale = (price - sconto);
     document.getElementById('riepilogo').classList.remove('hide');
     document.getElementById('riepilogo').classList.add('show');
-    document.getElementById('nome').innerHTML;
+    document.getElementById('nome').innerHTML=nomeutente;
+    document.getElementById('costo').innerHTML=prezzoFinale.toFixed(2);
+
 }
 else if(age >= 65 ){
     let sconto = (price * 40) /100;
     let prezzoFinale = (price - sconto);
     document.getElementById('riepilogo').classList.remove('hide');
     document.getElementById('riepilogo').classList.add('show');
+    document.getElementById('nome').innerHTML=nomeutente;
+    document.getElementById('costo').innerHTML=prezzoFinale.toFixed(2);
 }
 else{
     document.getElementById('riepilogo').classList.remove('hide');
     document.getElementById('riepilogo').classList.add('show');
+    document.getElementById('nome').innerHTML=nomeutente;
+    document.getElementById('costo').innerHTML=price.toFixed(2);
 }
 }
