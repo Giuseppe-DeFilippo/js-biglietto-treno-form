@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="" onsubmit($evento)="calcolo"> <!--serve per inserire i dati-->
+    <form action="" onsubmit="calcolo(event)"> <!--serve per inserire i dati-->
     <label for="fname">nome cognome </label>
     <input type="text" id="fname" name="fname" >
     <label for="fname">km  da percorrere</label>
@@ -20,10 +20,30 @@
       </select>
       <button>genera</button>
       <button type="reset">annulla</button>
-
     </form>
-
-
+    <div class="hide" id="riepilogo">
+    <h2>il tuo biglietto</h2>
+    <h3>dettaglio passeggero</h3>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            nome passeggero <span id="nome"></span>
+          </div>
+          <div class="col order-5">
+            biglietto standard
+          </div>
+          <div class="col order-1">
+            carrozza
+          </div>
+          <div class="col order-1">
+            codice
+          </div>
+          <div class="col order-1">
+            costo biglietto <span id="costo"></span>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="" src="java-script.js"></script>
 </body>
 </html>
