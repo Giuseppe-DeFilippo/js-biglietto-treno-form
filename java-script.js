@@ -40,3 +40,4 @@ else{
     document.getElementById('costo').innerHTML=price.toFixed(2);
 }
 }
+
